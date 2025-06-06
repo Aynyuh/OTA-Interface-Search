@@ -15,12 +15,10 @@ object frmOTAIntfSearch: TfrmOTAIntfSearch
   Font.Height = -13
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
   Position = poDesigned
   OnCreate = FormCreate
   OnDestroy = FormDestroy
   OnShow = FormShow
-  PixelsPerInch = 96
   TextHeight = 16
   object pgcPageControl: TPageControl
     AlignWithMargins = True
@@ -33,13 +31,11 @@ object frmOTAIntfSearch: TfrmOTAIntfSearch
     ParentShowHint = False
     ShowHint = False
     TabOrder = 0
+    ExplicitWidth = 776
+    ExplicitHeight = 529
     object tabInterfaces: TTabSheet
       AlignWithMargins = True
       Caption = 'OTA Tools API &Interfaces'
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       object splViews: TSplitter
         Left = 0
         Top = 301
@@ -62,13 +58,11 @@ object frmOTAIntfSearch: TfrmOTAIntfSearch
         MultiLine = True
         TabOrder = 1
         OnChange = pagViewsChange
+        ExplicitTop = 299
+        ExplicitWidth = 762
         object tabCodeView: TTabSheet
           AlignWithMargins = True
           Caption = '&Code'
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 0
           object CodeView: TSynEdit
             Left = 0
             Top = 0
@@ -102,15 +96,12 @@ object frmOTAIntfSearch: TfrmOTAIntfSearch
             Highlighter = synPascal
             ReadOnly = True
             FontSmoothing = fsmNone
+            ExplicitWidth = 748
           end
         end
         object tabCreationPaths: TTabSheet
           AlignWithMargins = True
           Caption = 'Creation &Paths'
-          ExplicitLeft = 0
-          ExplicitTop = 0
-          ExplicitWidth = 0
-          ExplicitHeight = 0
           object splPaths: TSplitter
             Left = 0
             Top = 114
@@ -193,6 +184,7 @@ object frmOTAIntfSearch: TfrmOTAIntfSearch
             Value = 100.000000000000000000
           end>
         TabOrder = 0
+        ExplicitWidth = 762
         object edtFilter: TEdit
           AlignWithMargins = True
           Left = 3
@@ -208,6 +200,7 @@ object frmOTAIntfSearch: TfrmOTAIntfSearch
           ShowHint = True
           TabOrder = 0
           OnChange = edtFilterChange
+          ExplicitWidth = 375
         end
         object edtTargetSearch: TEdit
           AlignWithMargins = True
@@ -223,6 +216,8 @@ object frmOTAIntfSearch: TfrmOTAIntfSearch
           ShowHint = True
           TabOrder = 1
           OnChange = edtTargetSearchChange
+          ExplicitLeft = 384
+          ExplicitWidth = 375
         end
         object lblInterfaceMethodFilter: TLabel
           AlignWithMargins = True
@@ -251,10 +246,6 @@ object frmOTAIntfSearch: TfrmOTAIntfSearch
     object tabToolsAPIFiles: TTabSheet
       AlignWithMargins = True
       Caption = 'OTA Tools API &Files'
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 0
-      ExplicitHeight = 0
       DesignSize = (
         764
         500)
@@ -397,7 +388,9 @@ object frmOTAIntfSearch: TfrmOTAIntfSearch
         Width = 758
         Height = 461
         Anchors = [akLeft, akTop, akRight, akBottom]
+        DefaultNodeHeight = 20
         Header.AutoSizeIndex = 0
+        Header.Height = 16
         Header.MainColumn = -1
         TabOrder = 1
         TreeOptions.MiscOptions = [toAcceptOLEDrop, toCheckSupport, toFullRepaintOnResize, toInitOnSave, toToggleOnDblClick, toWheelPanning, toEditOnClick]
@@ -405,6 +398,8 @@ object frmOTAIntfSearch: TfrmOTAIntfSearch
         OnChecked = vstFilePathsChecked
         OnGetText = vstFilePathsGetText
         OnNodeClick = vstFilePathsNodeClick
+        Touch.InteractiveGestures = [igPan, igPressAndTap]
+        Touch.InteractiveGestureOptions = [igoPanSingleFingerHorizontal, igoPanSingleFingerVertical, igoPanInertia, igoPanGutter, igoParentPassthrough]
         Columns = <>
       end
     end
@@ -439,6 +434,8 @@ object frmOTAIntfSearch: TfrmOTAIntfSearch
       end>
     UseSystemFont = False
     OnDrawPanel = stbrStatusBarDrawPanel
+    ExplicitTop = 535
+    ExplicitWidth = 782
   end
   object ilInterfaces: TImageList
     Left = 40
