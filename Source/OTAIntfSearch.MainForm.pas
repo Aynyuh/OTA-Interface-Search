@@ -64,7 +64,8 @@ Uses
   OTAIntfSearch.UIUpdater,
   OTAIntfSearch.CustomVirtualStringTree,
   OTAIntfSearch.OptionsForm, System.Actions, Vcl.ActnList,
-  VirtualTrees.BaseAncestorVCL, VirtualTrees.BaseTree, VirtualTrees.AncestorVCL;
+  VirtualTrees.BaseAncestorVCL, VirtualTrees.BaseTree, VirtualTrees.AncestorVCL,
+  VirtualTrees.Types;
 
 Type
   (** A class to represent the form interface. **)
