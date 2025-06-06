@@ -54,7 +54,8 @@ Implementation
 Uses
   Windows,
   Graphics,
-  OTAIntfSearch.CustomHintWindow;
+  OTAIntfSearch.CustomHintWindow,
+  VirtualTrees.Types;
 
 (**
 
