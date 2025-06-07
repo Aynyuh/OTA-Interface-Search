@@ -1,6 +1,6 @@
 [submodule "Virtual-TreeView"]
 	path = Virtual-TreeView
-	url = https://github.com/Virtual-TreeView/Virtual-TreeView
+	url = git@github.com:Aynyuh/Virtual-TreeView.git
 [submodule "SynEdit"]
 	path = SynEdit
-	url = https://github.com/SynEdit/SynEdit
+	url = git@github.com:Aynyuh/SynEdit.git

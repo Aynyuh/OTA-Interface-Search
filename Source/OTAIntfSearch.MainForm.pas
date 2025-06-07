@@ -1220,7 +1220,10 @@ Begin
   If Pos(strError, LowerCase(strText)) > 0 Then
     StatusBar.Canvas.Font.Color := FOptions.Colour[ocInvalidRegEx]
   Else
-    StatusBar.Canvas.Font.Color := FOptions.Colour[ocValidRegEx];
+    begin
+      StatusBar.Canvas.Brush.Style := bsClear;
+      StatusBar.Canvas.Font.Color := FOptions.Colour[ocValidRegEx];
+    end;
   R := Rect;
   StatusBar.Canvas.TextRect(R, strText, [tfLeft, tfBottom]);
 End;
@@ -1239,6 +1242,7 @@ End;
 Procedure TfrmOTAIntfSearch.tmTimerEvent(Sender: TObject);
 
 Begin
+
   tmTimer.Enabled := False;
   Try
     If Not FHasDoneInitialParseAndFilter Then

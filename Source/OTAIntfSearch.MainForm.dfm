@@ -31,8 +31,6 @@ object frmOTAIntfSearch: TfrmOTAIntfSearch
     ParentShowHint = False
     ShowHint = False
     TabOrder = 0
-    ExplicitWidth = 776
-    ExplicitHeight = 529
     object tabInterfaces: TTabSheet
       AlignWithMargins = True
       Caption = 'OTA Tools API &Interfaces'
@@ -58,8 +56,6 @@ object frmOTAIntfSearch: TfrmOTAIntfSearch
         MultiLine = True
         TabOrder = 1
         OnChange = pagViewsChange
-        ExplicitTop = 299
-        ExplicitWidth = 762
         object tabCodeView: TTabSheet
           AlignWithMargins = True
           Caption = '&Code'
@@ -96,7 +92,6 @@ object frmOTAIntfSearch: TfrmOTAIntfSearch
             Highlighter = synPascal
             ReadOnly = True
             FontSmoothing = fsmNone
-            ExplicitWidth = 748
           end
         end
         object tabCreationPaths: TTabSheet
@@ -126,12 +121,14 @@ object frmOTAIntfSearch: TfrmOTAIntfSearch
               AlignWithMargins = True
               Left = 5
               Top = 5
-              Width = 4
-              Height = 16
+              Width = 734
+              Height = 20
               Align = alClient
               Alignment = taCenter
               Layout = tlCenter
               WordWrap = True
+              ExplicitWidth = 4
+              ExplicitHeight = 16
             end
           end
         end
@@ -184,7 +181,6 @@ object frmOTAIntfSearch: TfrmOTAIntfSearch
             Value = 100.000000000000000000
           end>
         TabOrder = 0
-        ExplicitWidth = 762
         object edtFilter: TEdit
           AlignWithMargins = True
           Left = 3
@@ -200,7 +196,6 @@ object frmOTAIntfSearch: TfrmOTAIntfSearch
           ShowHint = True
           TabOrder = 0
           OnChange = edtFilterChange
-          ExplicitWidth = 375
         end
         object edtTargetSearch: TEdit
           AlignWithMargins = True
@@ -216,8 +211,6 @@ object frmOTAIntfSearch: TfrmOTAIntfSearch
           ShowHint = True
           TabOrder = 1
           OnChange = edtTargetSearchChange
-          ExplicitLeft = 384
-          ExplicitWidth = 375
         end
         object lblInterfaceMethodFilter: TLabel
           AlignWithMargins = True
@@ -434,8 +427,6 @@ object frmOTAIntfSearch: TfrmOTAIntfSearch
       end>
     UseSystemFont = False
     OnDrawPanel = stbrStatusBarDrawPanel
-    ExplicitTop = 535
-    ExplicitWidth = 782
   end
   object ilInterfaces: TImageList
     Left = 40
