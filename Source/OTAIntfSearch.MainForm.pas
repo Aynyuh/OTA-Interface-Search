@@ -823,6 +823,10 @@ Begin
   Application.HintColor := clWhite;
   Application.HintPause := iHintPause;
   Application.HintHidePause := iHintHidePause;
+
+  // custom start
+  synPascal.SaveToFile('C:\Temp\synedit-pascal.ini');
+  // custom end
 End;
 
 (**
@@ -1217,13 +1221,11 @@ Var
 
 Begin
   strText := Panel.Text;
+  StatusBar.Canvas.Brush.Style := bsClear;
   If Pos(strError, LowerCase(strText)) > 0 Then
     StatusBar.Canvas.Font.Color := FOptions.Colour[ocInvalidRegEx]
   Else
-    begin
-      StatusBar.Canvas.Brush.Style := bsClear;
-      StatusBar.Canvas.Font.Color := FOptions.Colour[ocValidRegEx];
-    end;
+    StatusBar.Canvas.Font.Color := FOptions.Colour[ocValidRegEx];
   R := Rect;
   StatusBar.Canvas.TextRect(R, strText, [tfLeft, tfBottom]);
 End;
