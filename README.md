@@ -1,5 +1,5 @@
 # Fork notes
-My changes to make it compile in RAd Studio 12
+My changes to make it compile in RAD Studio 12
 
 # OTA-Interface-Search
 
